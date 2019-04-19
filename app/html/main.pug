@@ -1,6 +1,77 @@
 include block_html/_style.pug
 include block_html/_include.pug
 
-+header()
+.head-main-page
+	+header()
+.main-banner
+	.main-banner__el(style="background-image:url('img/car-1.jpg')")
+	.filter
+
+.section
+	.main-cont--sm
+		.section-title.section-title--center Технические характеристики
+		.content.content--md.content--center
+			p В аккумуляторах <strong>AlphaLine</strong>. реализуется ряд инновационных технологий, обеспечивающих высокую надежность, долговечность и превосходные характеристики.
+		.advant
+			.advant__el
+				.advant__el-img
+					img(src="img/tools.png", alt="")
+				.advant__el-text Решетки Power Frame (X-frame)
+			.advant__el
+				.advant__el-img
+					img(src="img/metal.png", alt="")
+				.advant__el-text Легирование Calcium+
+			.advant__el
+				.advant__el-img
+					img(src="img/serorate.png", alt="")
+				.advant__el-text Сепараторы GPS
+			.advant__el
+				.advant__el-img
+					img(src="img/batary.png", alt="")
+				.advant__el-text Высококачественные комплектующие
+
+.section
+	.main-cont--sm
+		.section-title.section-title--center AlphaLine — Аккумуляторы премиум качества
+		.content.content--md.content--center
+			p <strong>AlphaLine</strong> — аккумуляторные батареи, созданные для эксплуатации в экстремальных условиях и производятся для нашей компании южнокорейской корпорацией <strong>Atlas BX</strong>.
+			p <strong>Atlas BX</strong> — ПЕРВЫЙ по экспорту автомобильных аккумуляторных батарей в Россию. Мы — ПЕРВЫЕ среди российских партнеров <strong>Atlas BX</strong>. <strong>AlphaLine</strong> – ПЕРВАЯ буква вашего автомобиля!
+			p <strong>Atlas BX</strong>, с момента основания в 1944 году, считается технологическим лидером отрасли в Южной Корее. Он первым среди корейских компаний, еще в 1982 году, разработал и запустил производство необслуживаемых MF-батарей; в 2005-м первым в стране начал производство AGM-батарей; в 2008 году один из первых в мире в промышленных масштабах начал производить решетки методом штамповки.
+			p В 2014 году корпорация <strong>Atlas BX</strong> ввела новые мощности в Джеон Джу, увеличив суммарную мощность до 15 млн АКБ в год.
+			p В 2017 году начала строительство современнейшего завода в США.
+			p Производство <strong>Atlas BX</strong> сертифицировано по стандартам ISO 9001, ISO 14001, ISO/TS 16949. Корпорация многократно награждена правительством Южной Кореи за достижения в своей области.
+
+.section
+	.main-cont
+		.section-title.section-title--center Подбор акб AlphaLine по марке автомобиля
+		.filter-wrap
+			.filter-list
+				- var items = ['Марка','Модель','Год','Двигатель'];
+				each item in items
+					.filter-el
+						.filter-el__name #{item}
+						.filter-el__select
+							select.select-beauty
+								option(data-display="Веберите из списка") не выбрано
+								option корпус 1
+								option корпус 2
+								option корпус 3
+			.filter-footer
+				.filter-info * Подбор по марке автомобиля носит предварительный характер. Оптимальный вариант уточняйте непосредственно у продовцов в магазине.
+				.filter-get Подобрать акб
+
+.main-cont
+	.brand
+		.brand-img
+			img(src="img/banner-akkum.png", alt="")
+		.brand-info
+			.brand-info__title Высокое качество АКБ благодаря инновационным технологиям
+			.brand-info__list
+				.brand-info__list-el Длительный срок службы
+				.brand-info__list-el Повышенная мощность
+				.brand-info__list-el Надежная производительность
+				.brand-info__list-el Улучшенная безопасность и удобство использования
+
++footer()
 
 include ./block_html/_script.pug
