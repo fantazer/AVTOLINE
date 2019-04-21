@@ -496,8 +496,8 @@ select.select-beauty
 	font-weight: 700
 	color black
 
-.goods
-	margin-top: 90px
+
+
 .goods-el
 	f()
 	padding: 40px
@@ -706,6 +706,7 @@ select.select-beauty
 	border-radius 10px
 	cp()
 	tr(all)
+	margin-top: 90px
 	&:hover
 		box-shadow 0 20px 35px rgba(0, 0, 0, 0.4)
 
@@ -804,3 +805,271 @@ select.select-beauty
 		color $yellow
 		.icon
 			transform rotate(180deg)
+
+.location
+	+below(1024px)
+		column-count 3
+	+below(768px)
+		column-count 2
+	column-count 4
+.location-col
+	f()
+	margin-bottom: 10px
+.location-letter
+	+below(640px)
+		margin-right: 10px
+		size 20px
+		font-size:14px
+	flex(mid)
+	size 30px
+	color white
+	background: $yellow
+	margin-right: 30px
+	font-weight: 700
+//.location-list
+.location-el
+	+below(640px)
+		font-size: 10px
+	margin-bottom: 5px
+	color $black
+	display: block
+	&:hover
+		color $yellow
+.location-el--active
+	font-weight: 700
+
+//market
+.market-wrap
+	+below(768px)
+		padding: 0
+	background: white
+	padding: 60px 0
+
+.market-head
+
+	+below(1500px)
+		padding: 5px 20px
+	+below(1024px)
+		margin-bottom: 0
+	+below(640px)
+		display: none
+	f()
+	padding: 5px 50px
+	margin-bottom: 30px
+.market-head__el
+	+below(768px)
+		font-size: 12px
+		text-transform: none
+	up()
+	color #212121
+	opacity .4
+	font-size: 16px
+.market-head__el-name
+	width: 20%
+.market-head__el-adres
+	width: 60%
+.market-head__el-phone
+	+below(768px)
+		width: 25%
+	width: 20%
+
+.market-row
+	+below(1500px)
+		padding: 5px 20px
+	+below(640px)
+		fw()
+		padding: 10px
+		padding-bottom: 10px
+		margin-bottom: -1px
+		border-bottom 1px solid $border-color
+		border-top 1px solid $border-color
+	padding: 5px 50px
+	margin-bottom: 5px
+	f()
+	tr(all)
+	cp()
+	&:hover
+		box-shadow 0 3px 26px 4px rgba(112, 112, 112, 0.49)
+.market-el
+	+below(960px)
+		font-size: 16px
+	+below(640px)
+		f()
+		justify-content: space-between
+		width: 100%
+		font-size: 13px
+	+below(480px)
+		fw()
+	line-height: 1.4
+
+.market-name
+	+below(640px)
+		width: 100%
+	up()
+	width: 20%
+.market-adres
+	+below(640px)
+		width: 100%
+	width: 60%
+.market-phone
+	+below(768px)
+		width: 25%
+	+below(640px)
+		width: 100%
+	width: 20%
+//.market-power
+//.market-weight
+//.market-size
+
+.market-type
+	+below(640px)
+		display: block
+		font-weight: 600
+	+below(480px)
+		width: 100%
+		margin-bottom: 5px
+	display: none
+	width: 35%
+
+.market-val
+	+below(1024px)
+		padding: 0 4px
+	+below(640px)
+		width: 60%
+		padding: 0
+	+below(480px)
+		width: 100%
+		margin-bottom: 5px
+
+//.diler-wrap
+.content-title--clear
+	margin-bottom: 0
+.diler-el
+	+below(640px)
+		fw()
+	f()
+	align-items: stretch
+	margin-bottom: 30px
+.diler-el__map
+	+below(1024px)
+		width: 45%
+	+below(640px)
+		width: 100%
+		padding: 30% 10%
+	width: 30%
+	background: #dfdfdf
+	padding: 12% 10%
+	position: relative
+.diler-map
+	position: absolute
+	width: 100%
+	height: 100%
+	top 0
+	left 0
+.diler-el__info
+	+below(1024px)
+		width: 55%
+	+below(640px)
+		width: 100%
+		padding: 30px 15px
+	width: 70%
+	background: white
+	box-shadow 0 0 25px rgba(234, 234, 235, 0.75)
+.diler-el__title
+	+below(640px)
+		padding-bottom: 15px
+	@extend .type--md
+	font-weight 700
+	padding: 30px
+	border-bottom 1px solid #eaeaeb
+.diler-el__row
+	up()
+	f()
+	align-items: stretch
+	line-height: 1.6
+	&:nth-child(2)
+		.diler-el__type
+			padding-top: 40px
+		.diler-el__val
+			padding-top: 40px
+	&:last-child
+		.diler-el__type
+			padding-bottom: 40px
+		.diler-el__val
+			padding-bottom: 40px
+.diler-el__type
+	+below(640px)
+		width: 100%
+	color #a7a7a7
+	margin-right: 5px
+	display: block
+	padding: 10px 30px
+	width: 45%
+	text-transform: none
+	@extend .type--sm
+.diler-el__val
+	padding: 10px 30px
+	position: relative
+	display: block
+	width 55%
+	&:before
+		content ''
+		border-left 1px solid $border-color
+		left 0
+		position: absolute
+		height: 100%
+		top 0
+
+.material
+	+below(640px)
+		margin-left: 0
+		margin-right: 0
+	f()
+	fw()
+	margin-left: -15px
+	margin-right: -15px
+	margin-top: 75px
+.material__el
+	+below(900px)
+		width: 100%
+	+below(640px)
+		fl()
+		margin: 0 0 30px 0
+	f()
+	fw()
+	tr(all)
+	margin: 0 15px 30px 15px
+	width: calc(100%/3 - 30px)
+	align-items: stretch
+	border-radius 10px
+	background-color #ffffff
+	overflow: hidden
+	box-shadow 0 10px 15px rgba(0, 0, 0, 0.2)
+	&:hover
+		box-shadow 0 10px 35px rgba(0, 0, 0, 0.4)
+.material__el--img-wrap
+	+below(640px)
+		width: 100%
+		margin-bottom: 20px
+	width: 50%
+.material__el--img
+	bg-full()
+	padding: 45% 10%
+	height: 100%
+
+.material__el-cont
+	+below(640px)
+		padding-left: 15px
+		width: 100%
+	width:50%
+	padding 20px
+.material__el-row
+	margin-bottom: 20px
+.material__el-row-name
+	@extend .type--sm
+	color #999999
+	margin-bottom: 10px
+.material__el-row-val
+	color #212121
+	font-size: 16px
+	up()

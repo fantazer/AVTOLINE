@@ -8,14 +8,12 @@ include block_html/_include.pug
 			var items = ['Главная','Пункт','О бренде'];
 		each item in items
 			a(href="#").bread__el #{item}
-
 	.title.title--line Каталог
 	.content
 		p #[strong AlphaLine ] — аккумуляторные батареи, созданные для эксплуатации в экстремальных условиях и производятся для нашей компании южнокорейской корпорацией Atlas BX.
 	.catalog-toggle
 		.catalog-toggle__el.catalog-toggle__el--active Я оптовый покупатель
 		.catalog-toggle__el Я розничный покупатель
-
 	.catalog.catalog--active
 		.catalog-wrap
 			- for (var k=0;k<5;k++)
