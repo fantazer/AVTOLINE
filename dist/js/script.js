@@ -36,4 +36,21 @@ $(document).ready(function () {
 
 	//beauty select
 	$('.select-beauty').niceSelect();
+
+	//tab
+	$('.catalog-toggle__el').click(function(){
+		$('.catalog-toggle__el').removeClass('catalog-toggle__el--active');
+		$(this).addClass('catalog-toggle__el--active');
+		var currentTab = $(this).index();
+		$('.catalog').removeClass('catalog--active');
+		$('.catalog').eq(currentTab).addClass('catalog--active');
+	});
+
+	//catalog row toggle
+	$('.catalog-row').click(function(){
+		$(this).toggleClass('catalog-row--active');
+		$(this).find('.catalog-row-content').slideToggle();
+	});
+	//catalog row toggle===end
+
 });
