@@ -4,10 +4,15 @@ include block_html/_include.pug
 .head-main-page
 	+header()
 .main-banner
-	.main-banner__el(style="background-image:url('img/car-1.jpg')")
-	.filter
+	.main-banner__el-wrap
+		.main-banner__el.main-banner__el--md(style="background-image:url('img/banner-slide-1.jpg')")
+		.main-banner__el.main-banner__el--sm(style="background-image:url('img/banner-slide-1--sm.jpg')")
+	.main-banner__el-wrap
+		.main-banner__el.main-banner__el--md(style="background-image:url('img/banner-slide-1.jpg')")
+		.main-banner__el.main-banner__el--sm(style="background-image:url('img/banner-slide-1--sm.jpg')")
+	//.filter
 
-.section
+.section.section--first
 	.main-cont--sm
 		.section-title.section-title--center Технические характеристики
 		.content.content--md.content--center

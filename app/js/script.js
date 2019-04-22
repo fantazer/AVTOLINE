@@ -1,5 +1,13 @@
 $(document).ready(function () {
-	//mobile menu
+
+	$('.main-banner').slick({
+		slidesToShow: 1,
+		speed: 500,
+		autoplay: true,
+		autoplaySpeed: 4000,
+	});
+
+//mobile menu
 	//Фиксируем скрол
 	$('.head-toggle--open').click(function(){
 		$('body').css({
@@ -52,5 +60,7 @@ $(document).ready(function () {
 		$(this).find('.catalog-row-content').slideToggle();
 	});
 	//catalog row toggle===end
+
+
 
 });

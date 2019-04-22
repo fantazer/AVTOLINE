@@ -16,8 +16,8 @@
     <!--build:css css/vendor.css-->
     <link rel="stylesheet" href="bower/normalize.css/normalize.css" />
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-    <!--link(rel="stylesheet", href="bower/slick-carousel/slick/slick.css")-->
-    <!--link(rel="stylesheet", href="bower/slick-carousel/slick/slick-theme.css")-->
+    <link rel="stylesheet" href="bower/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower/slick-carousel/slick/slick-theme.css" />
     <link rel="stylesheet" href="bower/jquery-nice-select/css/nice-select.css" />
     <!--endbuild-->
     <link rel="stylesheet" href="css/style.css" />
@@ -66,10 +66,17 @@
         <!--block header end-->
     </div>
     <div class="main-banner">
-        <div class="main-banner__el" style="background-image:url('img/car-1.jpg')"></div>
-        <div class="filter"></div>
+        <div class="main-banner__el-wrap">
+            <div class="main-banner__el main-banner__el--md" style="background-image:url('img/banner-slide-1.jpg')"></div>
+            <div class="main-banner__el main-banner__el--sm" style="background-image:url('img/banner-slide-1--sm.jpg')"></div>
+        </div>
+        <div class="main-banner__el-wrap">
+            <div class="main-banner__el main-banner__el--md" style="background-image:url('img/banner-slide-1.jpg')"></div>
+            <div class="main-banner__el main-banner__el--sm" style="background-image:url('img/banner-slide-1--sm.jpg')"></div>
+        </div>
+        <!--.filter-->
     </div>
-    <div class="section">
+    <div class="section section--first">
         <div class="main-cont--sm">
             <div class="section-title section-title--center">Технические характеристики</div>
             <div class="content content--md content--center">
@@ -243,7 +250,7 @@
     <!--block footer end-->
     <!--build:js js/combined.js-->
     <script src="bower/jquery/dist/jquery.js"></script>
-    <!--script(src='bower/slick-carousel/slick/slick.js')-->
+    <script src="bower/slick-carousel/slick/slick.js"></script>
     <script src="js/add-on.js"></script>
     <script src="bower/jquery-nice-select/js/jquery.nice-select.min.js"></script>
     <!-- endbuild-->
