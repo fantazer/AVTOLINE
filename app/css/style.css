@@ -993,7 +993,7 @@ body {
   background: rgba(0,0,0,0.639);
 }
 .main-banner__el {
-  padding: 20% 10%;
+  padding: 22% 10%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1001,7 +1001,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .main-banner__el {
-    padding: 30% 10%;
+    padding: 35% 10%;
   }
 }
 @media only screen and (max-width: 769px) {
@@ -2699,7 +2699,7 @@ select.select-beauty {
           flex-wrap: wrap;
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
-  margin: 0 15px 30px 15px;
+  margin: 0 15px 15px 15px;
   width: -webkit-calc(100% / 3 - 30px);
   width: calc(100% / 3 - 30px);
   -webkit-box-align: stretch;
